@@ -1,0 +1,117 @@
+.reveal .slide-notransform {
+    text-transform: none;
+}
+
+.reveal .slide-bold {
+    font-weight: bold;
+}
+
+.reveal .slide-font1_2x {
+    font-size: 1.2em;
+}
+
+.reveal .slide-font2x {
+    font-size: 2em;
+}
+
+.reveal .slide-font3x {
+    font-size: 3em;
+}
+
+.reveal .slide-font4x {
+    font-size: 4em;
+}
+
+.reveal ul {
+    list-style-type: none;
+}
+
+.reveal li i.icon-ok {
+    text-indent: 0;
+}
+
+.reveal li {
+    list-style: none;
+    line-height: 1.2em;
+    margin-top: 0.5em;
+    text-indent: -1.4em;
+}
+
+.reveal li.slide-li2x {
+    font-size: 1.6em;
+    margin-top: 0.5em;
+    list-style: none;
+    line-height: 1em;
+    text-indent: -1.4em;
+}
+
+.reveal .slide-red {
+    color: rgb(178, 79, 76);
+    text-shadow: 0.03em 0.03em 0.03em rgba(200, 90, 90, 0.3);
+}
+
+.reveal .slide-yellow {
+    color: rgb(178, 164, 76);
+    text-shadow: 0.03em 0.03em 0.03em rgba(190, 180, 90, 0.3);
+}
+
+.reveal .slide-green {
+    color: rgb(106, 178, 76);
+    text-shadow: 0.03em 0.03em 0.03em rgba(120, 190, 90, 0.3);
+}
+
+.reveal .slide-korean {
+    background: #00bff3;
+    background: -webkit-gradient(linear, left top, right bottom, from(#ed145b), to(#00bff3));
+    background: -moz-linear-gradient(-45deg,  #ed145b,  #00bff3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed145b', endColorstr='#00bff3');
+
+    padding: 10px;
+
+            transition: width 0.2s ease-out, background 0.2s ease-out;
+       -moz-transition: width 0.2s ease-out, background 0.2s ease-out;
+    -webkit-transition: width 0.2s ease-out, background 0.2s ease-out;
+         -o-transition: width 0.2s ease-out, background 0.2s ease-out;
+
+    -webkit-border-radius: 26px 26px 26px 26px;
+            border-radius: 26px 26px 26px 26px;
+}
+
+.reveal .slide-rotate--20 {
+            transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg); /* IE 9 */
+       -moz-transform: rotate(-20deg); /* Firefox */
+    -webkit-transform: rotate(-20deg); /* Safari and Chrome */
+         -o-transform: rotate(-20deg); /* Opera */
+}
+
+.reveal .slide-rotate--30 {
+            transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg); /* IE 9 */
+       -moz-transform: rotate(-30deg); /* Firefox */
+    -webkit-transform: rotate(-30deg); /* Safari and Chrome */
+         -o-transform: rotate(-30deg); /* Opera */
+}
+
+.reveal .slide-bigpic {
+    margin-top: -10%;
+    width: 1024px;
+    height: 768px;
+}
+
+.reveal .slide-bigh1 {
+    font-size: 6em;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
+
+.reveal pre code {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    max-height: 800px;
+    margin-top: -1em;
+    padding-left: 1em;
+}
