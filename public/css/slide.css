@@ -45,6 +45,14 @@
     text-indent: -1.4em;
 }
 
+.reveal li.slide-li1_5x {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    list-style: none;
+    line-height: 1em;
+    text-indent: -1.4em;
+}
+
 .reveal .slide-red {
     color: rgb(178, 79, 76);
     text-shadow: 0.03em 0.03em 0.03em rgba(200, 90, 90, 0.3);
