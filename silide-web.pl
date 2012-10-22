@@ -13,7 +13,7 @@ my %DEFAULT_STASH = (
     %{ plugin 'Config' },
 );
 app->defaults(%DEFAULT_STASH);
- 
+
 plugin 'haml_renderer';
 
 my $haml = Text::Haml->new;
@@ -49,10 +49,16 @@ helper haml => sub {
 };
 
 get '/' => sub {
+    my $self = shift;
+
+    my @slides = map { s/\.slide$// ? $_ : () } read_dir( app->config->{slide_dir} );
+    $self->stash(
+        slides => \@slides,
+    );
 } => 'index';
 
-get '/presentation/:name' => sub {
-    my $self = shift; 
+get '/s/:name' => sub {
+    my $self = shift;
     my $name = $self->param('name');
 
     my $file = catfile(
@@ -76,13 +82,20 @@ app->start;
 
 __DATA__
 
-@@ index.html.haml
-- layout 'slide';
-- title 'Welcome';
-Welcome to the Mojolicious real-time web framework!
-%p foo
-.hi
-  != q{<div id="blah">Blah!</div>}
+@@ index.html.ep
+% layout 'slide';
+% title 'Index of Presentaions via @keedi';
+<section>
+  <h2 style="margin-top: -0.7em;">Index</h2>
+  <ul>
+    % for my $slide (@$slides) {
+      <li>
+        <i class="icon-ok slide-green"></i>
+        <a href="s/<%= $slide %>"> <%= $slide %> </a>
+      </li>
+    % }
+  </ul>
+</section>
 
 
 @@ slide.html.ep
@@ -129,10 +142,10 @@ Welcome to the Mojolicious real-time web framework!
         controls: true,
         progress: true,
         history: true,
-      
+
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
-      
+
         // Optional libraries used to extend on reveal.js
         dependencies: [
           { src: '/reveal/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
