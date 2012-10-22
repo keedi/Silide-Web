@@ -1,0 +1,873 @@
++{
+    author   => 'Keedi Kim',
+    subject  => 'Minimal Perl WebApp for Your Minimal Life',
+    sections => <<'END_SECTION',
+
+%section
+  %h1
+    %span.slide-red Minimal Perl WebApp
+    for Your Minimal Life
+  %h2.slide-green{ :style => 'margin-top: 0.5em;' } Keedi Kim
+  %h3{ :style => 'margin-top: 0.5em;' }
+    %span.slide-korean KPW2012
+    Sat. Oct. 20th, 2012
+
+%section
+  %h1
+    Web is
+    %span.slide-green Easy
+    !
+  %h1          Isn't It?
+  %h2.fragment Um...
+  %h1.fragment Really?
+
+%section
+  %h1          In fact,
+  %h1.fragment
+    Web is
+    %span.fragment.slide-red.slide-rotate--20{ :style => 'display: block; font-size: 300%;' } Hell!!
+    
+
+%section
+  %h1{ :style => 'margin-top: -0.7em;' } Need to Know
+  .know
+    %span.fragment HTML
+    %span.fragment CGI
+    %span.fragment CSS
+    %span.fragment Javascript
+  %h3.fragment Is it All?
+  %h2.fragment Sorry...
+  .know
+    %span.fragment Perl
+    %span.fragment
+      MVC
+      Catalyst
+      Dancer
+      Mojolicious
+    %span.fragment
+      DNS
+      Apache
+      Reverse Proxy
+      nginx
+      PSGI
+      uWSGI
+      Websocket
+    %span.fragment
+      DB
+      MySQL
+      PostgreSQL
+      SQLite
+      ORM
+      DBIx::Class
+      Fey
+    %span.fragment
+      NoSQL
+      MongoDB
+      CouchDB
+      redis
+      memcached
+    %span.fragment STOMP
+    %span.fragment
+      Job/Queue/Worker
+      TheSchwartz
+      Gearman
+    %span.fragment
+      XML
+      JSON
+      XML-RPC
+      JSON-RPC
+      Ajax
+      REST
+    %span.fragment
+      jQuery
+      jQueryUI
+      CoffeeScript
+    %span.fragment
+      Template
+      Markdown
+      Grid
+      Bootstrap
+      HTML5 Boilerplate
+      Sass
+      LESS
+      Haml
+    %span.fragment
+      Unit Test
+      Selenium
+      Test::*
+    %span.fragment.slide-font4x.slide-bold.slide-red.slide-rotate--20{ :style => 'display: block; margin-top: -2em;' } WTH!!!
+
+%section
+  %img.slide-bigpic{ :src => '/img/gateway-to-hell.png' }
+  %h3.fragment{ :style => 'margin-top: -3em;' } Welcome To Hell!
+
+%section
+  %h2{ :style => 'margin-top: -1em;' } There is
+  %h1.slide-bigh1
+    %span.slide-green Super Easy
+    Way to Make
+    %span.slide-green WebApp
+
+%section
+  %h1{ :style => 'margin-top: -0.7em;' } Suggestions
+  %ul
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Perl (v5.10.1 ~ )
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Mojolicious::Lite
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      jQuery
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Twitter Bootstrap
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Font Awesome
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Markdown
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Haml
+
+%section
+  %h3{ :style => 'margin-top: -1.5em;' }
+    I
+    %i.icon-heart.slide-red
+  %h1.slide-notransform Perl (v5.10.1 ~ )
+  %ul
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      say, given-when
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      named-capture
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Suggests
+      %span.slide-yellow v5.14.3
+      ,
+      %span.slide-yellow v5.16.1
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Use
+      %span.slide-yellow perlbrew && cpanm
+      !!
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      %span.slide-yellow Mojolicious
+      !!
+
+%section
+  %h3{ :style => 'margin-top: -2em;' }
+    I Really
+    %i.icon-heart.slide-red
+  %h1.slide-notransform Catalyst
+  %ul
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Well-structured
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      So many plugins
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Really stable
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Moose
+    %li.slide-li2x.fragment
+      %i.icon-ok.slide-green
+      %span.slide-red.slide-font2x BUT
+      %span.fragment difficult for newbie
+    %li.slide-li2x.fragment
+      %i.icon-ok.slide-green
+      Use
+      %span.slide-yellow.slide-font1_2x.fragment Dancer
+      %span.fragment
+        \||
+        %span.slide-yellow.slide-font1_2x Mojolicious
+        ;
+
+%section
+  %h3{ :style => 'margin-top: -1.5em;' }
+    I
+    %i.icon-heart.slide-red
+  %h1.slide-notransform Mojolicious::Lite
+  %ul
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      WebApp by
+      %span.slide-yellow single file
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Easy to
+      %span.slide-yellow deploy
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      No
+      %span.slide-yellow dependency
+      \(+/-)
+    %li.slide-li2x.fragment{ :style => 'line-height: 1.6em;' }
+      %i.icon-ok.slide-green
+      Good for
+      %span.slide-green simple
+      &
+      %span.slide-green light
+      site like
+      %span.slide-korean Perl.kr
+      %span.slide-korean.fragment KPW2012
+
+%section
+  %h2.slide-notransform.slide-korean{ :style => 'margin-top: -2em;' } Perl Korea
+  %img.slide-bigpic{ :src => '/img/perlkr.png' :style => 'margin-top: 0.5em;' }
+  %h1.slide-green.slide-notransform.slide-rotate--30.fragment{ :style => 'margin-top: -3.5em;' } Made by Mojolicious
+
+%section
+  %h2.slide-notransform.slide-korean{ :style => 'margin-top: -2em;' } Korean Perl Workshop 2012
+  %img.slide-bigpic{ :src => '/img/kpw2012.png' :style => 'margin-top: 0.5em;' }
+  %h1.slide-green.slide-notransform.slide-rotate--30.fragment{ :style => 'margin-top: -3.5em;' } Made by Mojolicious
+
+%section
+  %h1.slide-bigh1
+    Ok!
+    %br/
+    Let's Start
+
+%section
+  %h2{ :style => 'margin-top: -1.5em;' } Build Your Own
+  %h1.slide-notransform{ :style => 'font-size: 3em;' } Perl & cpanm & Mojolicious
+  %pre.fragment
+    %code.command
+      %span $ curl -kL 'http://install.perlbrew.pl' | bash
+      %span.fragment $ echo 'source ~/perl5/perlbrew/etc/bashrc' \
+      %span.fragment     >> ~/.bashrc
+      %span.fragment \# logout and login :-)
+      %span.fragment $ perlbrew install-cpanm
+      %span.fragment $ perlbrew install 5.16.1 -Dusethreads --notest
+      %span.fragment $ perlbrew switch 5.16.1
+      %span.fragment $ cpanm Mojolicious
+  %h2
+    %span.fragment That's All!
+    %span.slide-green.fragment perlbrew++ cpanm++
+  %h3.fragment
+    Be Careful with
+    %span.slide-red.slide-notransform.fragment --notest
+
+%section
+  %h3{ :style => 'margin-top: -2em;' }
+    Generate
+    %span.slide-green.slide-notransform Mojolicious::Lite
+    App
+  %pre.fragment
+    %code.command
+      %span $ mkdir MyFirst::WebApp
+      %span.fragment $ cd MyFirst::WebApp
+      %span.fragment $ mojo generate lite_app myfirst-webapp.pl
+      %span.fragment $ touch myfirst-webapp.conf
+  %h3.fragment{ :style => 'margin-top: -0.5em;' }
+    Edit Default Config:
+    %span.slide-green.slide-notransform myfirst-webapp.conf
+  %pre.fragment
+    %code{ :style => 'font-size: 1.2em;' }
+      use utf8;
+      use strict;
+      use warnings;
+      \ 
+      +{ # Add key-value pair for your WebApp
+          key1 => 'value1',
+          key2 => 'value2',
+          \...
+      };
+  %h3.fragment{ :style => 'margin-top: -0.5em;' }
+    File Name Convention:
+    %span.slide-green.slide-notransform myfirst-webapp.{conf|pl}
+
+%section
+  %h3{ :style => 'margin-top: -2.2em;' } Auto Generated Code
+  %pre
+    %code{ :style => "font-size: 1.2em;" }
+      != '#!/usr/bin/env perl'
+      != ''
+      != 'use Mojolicious::Lite;'
+      != '  '
+      != '# Documentation browser under \'/perldoc\''
+      != 'plugin \'PODRenderer\';'
+      != '  '
+      != 'get "/" => sub {'
+      != '  my \$self = shift;'
+      != '  \$self->render("index");'
+      != '};'
+      != '  '
+      != 'app->start;'
+      != '  '
+      != '__DATA__'
+      != '@@ index.html.ep'
+      != '% layout \'default\';'
+      != '% title \'Welcome\';'
+      != 'Welcome to the Mojolicious real\-time web framework!'
+      != ''
+      <!DOCTYPE html>
+      <html>
+        <head><title><%= title %></title></head>
+        <body><%= content %></body>
+      </html>
+
+%section
+  %h3{ :style => 'margin-top: -2.5em;' } Remove Needless Code
+  %pre
+    %code
+      \# Documentation browser under "/perldoc"
+      plugin 'PODRenderer';
+  .fragment
+    %h3 Remove Needless Template
+    %pre
+      %code
+        @@ index.html.ep
+        \% layout 'default';
+        \% title 'Welcome';
+        Welcome to the Mojolicious real-time web framework!
+        \ 
+        @@ layouts/default.html.ep
+        <!DOCTYPE html>
+        <html>
+          <head><title><%= title %></title></head>
+          <body><%= content %></body>
+        </html>
+
+%section
+  %h1 Let's Make Template
+  %h2.fragment{ :style => 'margin-top: 1em' } Oh, Wait!
+  %h1.fragment
+    Let's Try
+    %span.slide-green Haml
+    !
+  %h3.slide-notransform.slide-yellow.fragment
+    != 'http://haml.info'
+  %h3.slide-notransform.fragment{ :style => 'margin-top: 1em' } $Haml eq 'HTML Abstraction Markup Language';
+
+%section
+  %img.slide-bigpic{ :src => '/img/haml.png' }
+
+%section
+  %h2{ :style => 'margin-top: -1.5em;' } HTML
+  %pre
+    %code{ :style => 'font-size: 1.4em;' }
+      <section class="container">
+        <h1><%= post.title %></h1>
+        <h2><%= post.subtitle %></h2>
+        <div class="content">
+          <%= post.content %>
+        </div>
+      </section>
+  .fragment
+    %h2.slide-green.slide-notransform{ :style => 'margin-top: -0.3em;' } Haml
+    %pre
+      %code{ :style => 'font-size: 1.4em;' }
+        != '%section.container'
+        != '  %h1= post.title'
+        != '  %h2= post.subtitle'
+        != '  .content'
+        != '    = post.content'
+  %h3.slide-notransform.fragment
+    use
+    %span.slide-yellow Text::Haml
+    ,
+    %span.slide-yellow Mojolicious::Plugin::HamlRenderer
+
+%section
+  %h3.slide-notransform{ :style => 'margin-top: -2.4em;' }
+    Install
+    %span.slide-green Mojolicious::Plugin::HamlRenderer
+  %pre
+    %code
+      cpanm Mojolicious::Plugin::HamlRenderer
+  .fragment
+    %h2{ :style => 'margin-top: -0.3em;' } Mix It!
+    %pre
+      %code{ :style => 'font-size: 1.4em;' }
+        != "use Mojolicious::Lite;"
+        != ""
+        != "plugin 'haml_renderer';"
+        != ""
+        != "get '/' => sub {"
+        != "   ..."
+        != "} => 'index';"
+        != ""
+        != "app->start;"
+        != ""
+        != "__DATA__"
+        != "@@ index.html.haml"
+        != "- layout 'slide';"
+        != "- title 'Welcome';"
+        != "Welcome to the Mojolicious real-time web framework!"
+
+%section
+  %h1{ :style => 'margin-top: 1em;' }
+    Template with
+    %span.slide-green Haml
+
+%section
+  %h2{ :style => 'margin-top: -1em;' } Layout
+  %pre
+    %code
+      != "@@ layouts/slide.html.haml"
+      != "!!! 5"
+      != "%html"
+      != "  %head"
+      != "    %title= title"
+      != "    = include 'layouts/slide/meta'"
+      != "    = include 'layouts/slide/css'"
+      != "    = include 'layouts/slide/js'"
+      != ""
+      != "  %body"
+      != "    .reveal"
+      != "      .slides"
+      != "        = content"
+      != "    = include 'layouts/slide/body-js'"
+      != "    = include 'layouts/slide/google-analytics'"
+
+%section
+  %h2{ :style => 'margin-top: -1.5em;' } Meta
+  %pre
+    %code{ :style => 'font-size: 1.2em;' }
+      != "@@ layouts/slide/meta.html.haml"
+      != "/ META"
+      != "    %meta{ :charset => 'utf-8' }"
+      != "    %meta{ :name => 'author',      content => 'Keedi Kim' }"
+      != "    %meta{ :name => 'description', content => 'Silide'    }"
+      != "    ..."
+  .fragment
+    %h2{ :style => 'margin-top: -0.3em;' }
+      Add
+      %span.slide-yellow FontAwesome
+      &
+      %span.slide-yellow Bootstrap
+    %pre
+      %code{ :style => 'font-size: 1.2em;' }
+        != "/ CSS"
+        != "    %link{:rel => 'stylesheet',"
+        != "          :type => 'text/css',"
+        != "          :href => '/font-awesome/css/font-awesome.css'}"
+        != "    %link{:rel => 'stylesheet',"
+        != "          :type => 'text/css',"
+        != "          :href => '/css/style.css'}"
+        != "    ..."
+  .fragment{ :style => 'margin-top: -0.3em' }
+    %h4.slide-notransform
+      Warning:
+      %span.slide-red Text::Haml
+      does
+      %span.slide-red NOT support multi-line
+      stretching out yet.
+
+%section
+  %h3{ :style => 'margin-top: -2.2em;' } Template with EP:
+  %h2
+    %span.slide-green JavaScript
+    : Add
+    %span.slide-yellow jQuery & etc JS
+  %pre
+    %code{ :style => 'font-size: 1.4em;' }
+      @@ layouts/slide/js.html.ep
+      <!-- JavaScript -->
+          <script>
+            document.write(
+              '<link rel="stylesheet" '
+              + 'href="/reveal/css/print/'
+              + ( window.location.search.match( /print-pdf/gi )
+                  ? 'pdf' : 'paper' )
+              + '.css" type="text/css" media="print">'
+            );
+          </script>
+  %h1.fragment EP??
+
+%section
+  %h2{ :style => 'margin-top: -1em;' }
+    What is
+    %span.slide-yellow EP
+    ?
+  %ul.fragment
+    %li.slide-li1_5x.fragment
+      %i.icon-ok.slide-green
+      Embedded Perl
+    %li.slide-li1_5x.fragment
+      %i.icon-ok.slide-green
+      Mojolicious Default Renderer
+  %h2.fragment{ :style => 'margin-top: 1em;' }
+    %span.slide-yellow EP
+    vs.
+    %span.slide-yellow Haml
+  %ul{ :style => 'margin-top: -0.5em' }
+    %li.slide-li1_5x.fragment
+      %i.icon-ok.slide-green
+      Perl implementation is
+      %span.slide-red NOT yet perfect
+      as Original's
+    %li.slide-li1_5x.fragment
+      %i.icon-ok.slide-green
+      EP is
+      %span.slide-green easy
+      enough
+    %li.slide-li1_5x.fragment
+      %i.icon-ok.slide-green
+      Use
+      %span.slide-green Haml
+      for boring HTML
+      %span.slide-green layout
+    %li.slide-li1_5x.fragment
+      %i.icon-ok.slide-green
+      Use
+      %span.slide-green EP
+      for
+      %span.slide-green detailed control
+      for HTML
+
+%section
+  %h1{ :style => 'margin-top: -1em;' } EP Usage
+  %pre
+    %code{ :style => 'font-size: 1.2em; line-height: 1.4em; margin-top: 0;' }
+      <% Perl code %>
+      <%= Perl exp, replaced with XML escaped result %>
+      <%== Perl exp, replaced with result %>
+      <%# Comment, useful for debugging %>
+      <%% Replaced with "<%", useful for generating templates %>
+      \% Perl code line, treated as "<% line =%>"
+      \%= Perl exp line, treated as "<%= line %>"
+      \%== Perl exp line, treated as "<%== line %>"
+      \%# Comment line, treated as "<%# line =%>"
+      \%% Replaced with "%", useful for generating templates
+  .fragment
+    %h2{ :style => 'margin-top: 0;' } That's all! 
+    %h2{ :style => 'margin-top: 0;' } Everything is Just HTML/TEXT
+
+%section
+  %h2{ :style => 'margin-top: -2em;' } Don't Forget!
+  %h2.fragment We also have
+  %h1.fragment
+    %span.slide-green Markdown
+    !!
+  %h2.fragment{ :style => 'margin-top: 1em' } Why Markdown?
+  %ul{ :style => 'margin-top: -0.5em' }
+    %li.slide-li2x.fragment
+      %i.icon-ok.slide-green
+      Good for
+      %span.slide-green content generation
+    %li.slide-li2x.fragment
+      %i.icon-ok.slide-green
+      Perl has
+      %span.slide-green perfect implementation
+      : 
+      %span.slide-yellow Text::MultiMarkdown
+    %li.slide-li2x.fragment
+      %i.icon-ok.slide-green
+      %span.slide-yellow Markdent
+      is good alternative if you want to
+      %span.slide-green customize
+      markdown
+      %span.slide-green parser
+
+%section
+  %h2{ :style => 'margin-top: -2em;' } Mix It Again!
+  %pre.fragment
+    %code
+      != 'use Mojolicious::Lite;'
+      != 'use Text::MultiMarkdown;'
+      != ''
+      != 'my $m = Text::MultiMarkdown->new('
+      != '    tab_width     => 2,'
+      != '    use_wikilinks => 0,'
+      != ');'
+      != ''
+      != 'helper markdown => sub {'
+      != '    my ( $self, $text ) = @_;'
+      != '    return unless $text;'
+      != '    my $html = $m->markdown($text);'
+      != '    return $html;'
+      != '};'
+  %h2.fragment Helper?
+
+%section
+  %h2{ :style => 'margin-top: -2.4em;' }
+    What is
+    %span.slide-yellow Helper
+    ?
+  %ul.fragment{ :style => 'margin-top: -0.5em' }
+    %li
+      %i.icon-ok.slide-green
+      %span.slide-green Methods
+      for View & Controller
+    %li
+      %i.icon-ok.slide-green
+      Easy way to re-use Perl routine
+  .fragment
+    %h2{ :style => 'margin-top: 0.5em;' }
+      Using in
+      %span.slide-yellow Controller
+    %pre
+      %code
+        post '/render' => sub {
+            my $self = shift;
+            my $text = $self->param('text');
+            my $html = $self->makdown($text); # Here!!
+            my $self->stash( html => $html );
+        } => 'render';
+  .fragment
+    %h2{ :style => 'margin-top: -0.2em;' }
+      Using in
+      %span.slide-yellow View
+    %pre
+      %code
+        @@ render.html.ep
+        HTML goes below:
+        <%= markdown $text %>
+
+%section
+  %h2{ :style => 'margin-top: -2em;' } Last!
+  %h1.slide-green Controller
+  %h2.fragment
+    It's enough to know just
+    %span.slide-green 2 things
+  %ul.fragment
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      %span get
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      %span post
+  .fragment{ :style => 'margin-top: 1em;' }
+    %h2.slide-notransform
+      %span.slide-green get
+      for
+      %span.slide-red GET
+      request
+    %h2.slide-notransform
+      %span.slide-green post
+      for
+      %span.slide-red POST
+      request
+  %h2.fragment{ :style => 'margin-top: 1em' } Easy to Remember, Huh?
+
+%section
+  %h2{ :style => 'margin-top: -2em;' } Get Request #1
+  %pre
+    %code
+      \# Route with placeholder
+      get '/' => sub {
+        my $self = shift;
+        \# ... do anything you want ...
+        $self->stash(
+            key1 => 'value1',
+            key2 => 'value2',
+            \# ...,
+        );
+      } => 'index';
+  %ul.fragment{ :style => 'margin-top: -1em' }
+    %li
+      %i.icon-ok.slide-green
+      Access via
+      %span.slide-green 'http://*/'
+    %li
+      %i.icon-ok.slide-green
+      %span.slide-green $self
+      &
+      %span.slide-green app
+      is all around
+    %li
+      %i.icon-ok.slide-green
+      %span.slide-green index
+      EP renderer
+    %li
+      %i.icon-ok.slide-green
+      %span.slide-green stash
+      : hold data for view (MVC)
+
+%section
+  %h2{ :style => 'margin-top: -2.5em;' } Get Request #2
+  %pre
+    %code
+      get '/hello' => sub {
+        my $self = shift;
+        \# ... do anything you want ...
+      } => 'hello';
+  %ul.fragment{ :style => 'margin-top: -1.5em' }
+    %li
+      %i.icon-ok.slide-green
+      Access via
+      %span.slide-green 'http://*/hello'
+    %li
+      %i.icon-ok.slide-green
+      %span.slide-green hello
+      EP renderer
+  .fragment{ :style => 'margin-top: 1.5em;' }
+    %h2 Get Request #3
+    %pre
+      %code
+        get '/hello' => sub {
+          my $self = shift;
+          \# ... do anything you want ...
+        } => 'greet';
+    %ul.fragment{ :style => 'margin-top: -1.5em' }
+      %li
+        %i.icon-ok.slide-green
+        Access via
+        %span.slide-green 'http://*/hello'
+      %li
+        %i.icon-ok.slide-green
+        %span.slide-green greet
+        EP renderer
+
+%section
+  %h2{ :style => 'margin-top: -2.5em;' } Get Request #4
+  %pre
+    %code
+      get '/wow/hello' => sub {
+          my $self = shift;
+          my $name = $self->param('name');
+          $self->stash( name => $name );
+      } => 'greet_to';
+      / 
+      __DATA__
+      @@ greet_to.heml.ep
+      hello $name
+  %ul.fragment{ :style => 'margin-top: -1.5em' }
+    %li
+      %i.icon-ok.slide-green
+      Access via
+      %span.slide-green 'http://*/wow/hello'
+    %li
+      %i.icon-ok.slide-green
+      %span.slide-green greet_to
+      EP renderer
+    %li
+      %i.icon-ok.slide-green
+      Can
+      %span.slide-yellow send parameter
+      :
+      %br/
+      %span.slide-green 'http://*/wow/hello/?name=KPW2012'
+    %li
+      %i.icon-ok.slide-green
+      Can fetch
+      %span.slide-yellow get parameter
+      :
+      %br/
+      %span.slide-green $self->param('key')
+    %li
+      %i.icon-ok.slide-green
+      Send
+      %span.slide-green $name
+      to
+      %span.slide-green view
+
+%section
+  %h2{ :style => 'margin-top: -2.5em;' } Post Request #1
+  %pre
+    %code
+      post '/kpw2012/register' => sub {
+          my $self = shift;
+          \ 
+          my $name    = $self->param('name');
+          my $email   = $self->param('email');
+          my $twitter = $self->param('twitter');
+          \ 
+          \# send to DB or etc...
+      } => 'register_finished';
+  %ul.fragment{ :style => 'margin-top: -1.5em' }
+    %li
+      %i.icon-ok.slide-green
+      Access via
+      %span.slide-green 'http://*/kpw2012/register'
+    %li
+      %i.icon-ok.slide-green
+      %span.slide-green register_finished
+      EP renderer
+    %li
+      %i.icon-ok.slide-green
+      Can
+      %span.slide-yellow send parameter
+      :
+      %br/
+      %span.slide-green "curl --data 'name=Keedi%20Kim&email=keedi.k%40gmail.com" 'http://*/kpw2012/register'
+    %li
+      %i.icon-ok.slide-green
+      Can fetch
+      %span.slide-yellow post parameter
+      :
+      %br/
+      %span.slide-green $self->param('key')
+
+%section
+  %h2{ :style => 'margin-top: -2em;' } Post Request #2
+  %pre
+    %code
+      post '/kpw2012/register' => sub {
+          my $self = shift;
+          \ 
+          my $name    = $self->param('name')    || q{};
+          my $email   = $self->param('email')   || q{};
+          my $twitter = $self->param('twitter') || q{};
+          \ 
+          \# send to DB or etc...
+      } => 'register_finished';
+  %ul.fragment{ :style => 'margin-top: -1.5em' }
+    %li
+      %i.icon-ok.slide-green
+      It is good idea,
+      %span.slide-green set value
+      to avoid
+      %span.slide-green undef value
+  %h2.fragment{ :style => 'margin-top: 1em;' } That's All...
+
+%section
+  %h2{ :style => 'margin-top: -2em;' }
+    For Your
+    %span.slide-green REST API
+  %pre
+    %code
+      get '/kpw2012/confirm/:email' => sub {
+          my $self = shift;
+          \ 
+          my $email = $self->param('email');
+          \ 
+          \# confirm person here...
+          $ret = ...;
+          $self->respond_to(
+              json => { json => { ret => $ret ? $ret : 0 } }
+          );
+      } => 'confirm_finished';
+  %ul.fragment{ :style => 'margin-top: -1.5em' }
+    %li
+      %i.icon-ok.slide-green
+      Fetch data
+      %span.slide-green from URL
+    %li
+      %i.icon-ok.slide-green
+      Response data
+      %span.slide-green as JSON
+  %h2.fragment{ :style => 'margin-top: 1em;' }
+    That's
+    %span.slide-red REALLY
+    All...
+
+%section
+  %h1.slide-bigh1{ :style => 'margin-top: -0.5em;' } Example?
+  %ul
+    %li
+      %i.icon-ok.slide-green
+      git@github.com:keedi/Silide-Web.git
+    %li
+      %i.icon-ok.slide-green
+      git@github.com:keedi/KPW2012-Web.git
+    %li
+      %i.icon-ok.slide-green
+      git@github.com:keedi/Perl-Kr.git
+
+%section
+  %h1.slide-bigh1 Questions?
+
+END_SECTION
+};

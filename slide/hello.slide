@@ -1,0 +1,25 @@
++{
+    author   => 'Keedi Kim',
+    subject  => 'Minimal Perl Web App for Your Minimal Life',
+    sections => <<'END_SECTION',
+
+%section
+  %h1 Hello World
+
+%section
+  %h1 What The Hello
+
+%section
+  %h1 Hi
+
+%section
+  %h1 Wow
+
+%section
+  %h1 GoGo
+
+%section
+  %h1 Questions?
+
+END_SECTION
+};

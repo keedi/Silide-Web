@@ -1,0 +1,68 @@
+use utf8;
+
++{
+    author   => 'Keedi Kim',
+    subject  => 'Korean Perl Workshop 2012',
+    sections => <<'END_SECTION',
+
+%section
+  %h1
+    Korean Perl Workshop 2012
+  %h2.slide-green{ :style => 'margin-top: 0.5em;' } Seoul.pm
+  %h3{ :style => 'margin-top: 0.5em;' }
+    %span.slide-korean KPW2012
+    Sat. Oct. 20th, 2012
+
+%section
+  %h1.slide-bigh1 Since 2008
+  %h2 Rising Perl
+
+%section
+  %h2 2009?
+  %h2 2010?
+  %h2 2011?
+
+%section
+  %h1.slide-bigh1 Since 2012
+  %h2 Sat. Oct. 20th, 2012
+
+%section
+  %h1.slide-bigh1 Seoul.pm
+
+%section
+  %h2.slide-font2x Sponsors
+  %ul
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Google
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      NemusTech
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      SILEX
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      도서출판 지&선
+    %li.slide-li2x
+      %i.icon-ok.slide-green
+      Perl Weekly
+
+%section
+  %h1.slide-bigh1
+    Enjoy
+    %span.slide-green Perl!
+  %h1{ :style => 'line-height: 1.6em;' }
+    Contact
+    %span.slide-korean Seoul.pm
+    :-)
+
+%section
+  %h1.slide-bigh1 Question?
+  %h1.slide-green{ :style => 'line-height: 1.6em;' }
+    http://kpw2012.jubeat.kr/
+  %h2.slide-notransform{ :style => 'line-height: 1.6em;' } Ask Anythung via Mentioning @seoulpm ;-)
+ 
+
+END_SECTION
+};
