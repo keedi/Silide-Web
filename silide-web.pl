@@ -51,7 +51,7 @@ helper haml => sub {
 get '/' => sub {
     my $self = shift;
 
-    my @slides = map { s/\.slide$// ? $_ : () } read_dir( app->config->{slide_dir} );
+    my @slides = reverse sort map { s/\.slide$// ? $_ : () } read_dir( app->config->{slide_dir} );
     $self->stash(
         slides => \@slides,
     );
@@ -86,7 +86,7 @@ __DATA__
 % layout 'slide';
 % title 'Index of Presentaions via @keedi';
 <section>
-  <h2 style="margin-top: -0.7em;">Index</h2>
+  <h2 style="margin-top: 0;">Index</h2>
   <ul>
     % for my $slide (@$slides) {
       <li>
