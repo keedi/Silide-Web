@@ -23,14 +23,15 @@ use utf8;
   %h2 2011?
 
 %section
-  %h1.slide-bigh1 Since 2012
+  %h1.slide-bigh1 KPW2012
   %h2 Sat. Oct. 20th, 2012
 
 %section
   %h1.slide-bigh1 Seoul.pm
+  %h1 Seoul Perl Mongers
 
 %section
-  %h2.slide-font2x Sponsors
+  %h1{ :style => 'margin-top: -0.5em;' } Sponsors
   %ul
     %li.slide-li2x
       %i.icon-ok.slide-green
@@ -59,9 +60,11 @@ use utf8;
 
 %section
   %h1.slide-bigh1 Question?
-  %h1.slide-green{ :style => 'line-height: 1.6em;' }
-    http://kpw2012.jubeat.kr/
-  %h2.slide-notransform{ :style => 'line-height: 1.6em;' } Ask Anythung via Mentioning @seoulpm ;-)
+  %h2.slide-notransform{ :style => 'line-height: 1.6em;' }
+    Ask Anything to
+    %a{ :href => 'https://twitter.com/seoulpm' }
+      @seoulpm
+  %h1 ;-)
  
 
 END_SECTION

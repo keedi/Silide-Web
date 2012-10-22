@@ -1,3 +1,11 @@
+.reveal .roll {
+	  -webkit-perspective: none;
+	     -moz-perspective: none;
+	      -ms-perspective: none;
+	          perspective: none;
+    vertical-align: middle;
+}
+
 .reveal .slide-notransform {
     text-transform: none;
 }
@@ -35,6 +43,10 @@
     line-height: 1.2em;
     margin-top: 0.5em;
     text-indent: -1.4em;
+}
+
+.reveal li a {
+    text-indent: 0;
 }
 
 .reveal li.slide-li2x {
