@@ -77,7 +77,7 @@ get '/s/:name' => sub {
     );
 } => 'slide';
 
-app->secret( app->defaults->{secret} );
+app->secrets( app->defaults->{secret} );
 app->start;
 
 __DATA__
